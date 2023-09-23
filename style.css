@@ -1,8 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*barra de navegacion*/
 .navbar{
     margin-top: 0.2rem;
     padding: 0;
-    background-color: #f5f6f7;
+    background-color: #fff;
 }
 
 .navbar-collapse{
@@ -62,7 +68,7 @@ h1{
 /*seccion hero*/
 
 .hero{
-background-color: #f5f6f7;
+background-color: #fff;
 min-height: 450px; 
 text-align: center;
 }
@@ -419,15 +425,59 @@ footer{
     .overlay i{
         font-size: 40px;
     }
+
+    .iconos-redes-sociales{
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+
+        .sobre-mi1 {
+            border-top: 0;
+            border-bottom: 0;
+        }
+
 }
 
 @media screen and (max-width:800px) {
     .testimonio-imagen{
-        height: 120px;
-        width: 140px;
+    width: 7rem;
+    height: 7rem;
+    margin-bottom: 1rem;
     }
 
     .testimonio-texto{
-        font-size: 18px ;
+        font-size: 0.8rem ;
     }
+}
+@media screen and (max-width: 310px) {
+    .testimonio-imagen {
+            width: 5.5rem;
+            height: 5.5rem;
+            margin-bottom: 0.5rem;
+        }
+    
+        .testimonio-texto {
+            font-size: 0.8rem;
+        }
+}
+
+
+/*celular normal*/
+
+@media screen and (max-width:630px) {
+
+    #principal{
+        margin-top: 2rem;
+    }
+    .titulo{
+        margin-top: 2rem;
+    }
+    .subtitulo{
+        margin-top: 2rem;
+    }
+    .stich{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    
 }
